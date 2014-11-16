@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body> 
+
+	<div id="gov" class="box">
+		<a href="https://twitter.com/intent/tweet?text=A greater emphasis should be placed on education reform. This includes higher teacher salaries and fewer budget cuts.%20&amp;via=patmccrorync" title="TweetExample">GOVERNOR</a>
+	</div>
+
+	<div class="box">
+		<a href="https://twitter.com/intent/tweet?text=A greater emphasis should be placed on education reform. This includes higher teacher salaries and fewer budget cuts.%20&amp;via=senatorburr" title="TweetExample">SENATE</a>
+	</div>
+
+	<div class="box">
+	<a href="https://twitter.com/intent/tweet?text=A greater emphasis should be placed on education reform. This includes higher teacher salaries and fewer budget cuts.%20&amp;via=thomtillis" title="TweetExample">HOUSE OF REPRESENTATIVES</a>
+	</div>
+
+	<div class="box">
+	<a href="https://twitter.com/intent/tweet?text=A greater emphasis should be placed on education reform. This includes higher teacher salaries and fewer budget cuts.%20&amp;via=DurhamCounty" title="TweetExample">BOARD OF COMMISSIONERS</a>
+	</div>
+
+	<div class="box">
+	<a href="https://twitter.com/intent/tweet?text=A greater emphasis should be placed on education reform. This includes higher teacher salaries and fewer budget cuts.%20&amp;viaA greater emphasis should be placed on education reform. This includes higher teacher salaries and fewer budget cuts.=CityofDurhamNC" title="TweetExample">CITY COUNCIL</a>
+	</div>
+
+</body>
+
+
+
+<script>
+
+
+
+  var url = 'https://api.sendgrid.com/api/blocks.get.json?api_user=slchin&api_key=^85sl2c0';
+
+  var email = "test@hello.com";
+
+  var data = {
+  	"subject": "HackDuke Education",
+  	"To": email
+  }
+
+
+$.ajax({
+  type: "POST",
+  url: url,
+  data: data,
+  success: success,
+  dataType: dataType
+});
+
+
+</script>
+
+
+</html>
